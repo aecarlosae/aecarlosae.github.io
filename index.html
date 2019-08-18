@@ -105,8 +105,19 @@
             <section class="section summary-section">
                 <h2 class="section-title"><span class="icon-holder"><i class="fas fa-user"></i></span>Sobre mí</h2>
                 <div class="summary">
+                    <script type="text/javascript">
+                        function setYears(element) {
+                            var startDate = element.innerHTML;
+                            var years = new Date(new Date() - new Date(startDate)).getFullYear() - 1970;
+                            element.innerHTML = Math.abs(years);
+                        }
+                        document.body.onload = function () {
+                            setYears(document.getElementById('ca2e-experience-time'));
+                            setYears(document.getElementById('ca2e-age'));
+                        }
+                    </script>
                     <p style="text-align: justify;">
-                    Ingeniero de Sistemas, graduado en la Universidad Experimental Politécnica de la FANB (Venezuela), programador con más de 7 años en el área, diseñador de bases de datos NoSQL y SQL según lógica de negocio, analista de sistemas. Tengo 26 años de edad y actualmente trabajo como Programador Freelancer con distintas organizaciones/empresas En España, Costa Rica, Argentina y Venezuela.
+                    Ingeniero de Sistemas, graduado en la Universidad Experimental Politécnica de la Fuerza Armada Nacional Bolivariana, Programador / Desarrollador Full Stack con más de <span id="ca2e-experience-time">2012/06/18</span> años de experiencia, Diseñador de Bases de Datos Relacional y No Relacional, Analista de Sistemas. Tengo <span id="ca2e-age">1993/06/18</span> años de edad y actualmente trabajo como Freelancer con distintas organizaciones / empresas en España, Costa Rica, Argentina y Venezuela.
                     </p>
                 </div><!--//summary-->
             </section><!--//section-->
