@@ -328,6 +328,9 @@ p {
   .main-wrapper .upper-row {
     margin-bottom: 0;
   }
+  .main-wrapper .apps-section .app-list .app-item{
+    width: 29.33% !important;
+  }
 }
 
 @media (min-width: 992px) {
