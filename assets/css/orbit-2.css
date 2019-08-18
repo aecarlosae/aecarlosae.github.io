@@ -338,3 +338,52 @@ p {
     margin-bottom: 0;
   }
 }
+
+.main-wrapper .apps-section .section-title a{
+  text-transform: capitalize !important;
+}
+
+.main-wrapper .apps-section .app-list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  overflow: hidden;
+}
+
+.main-wrapper .apps-section .app-list .app-item{
+  float: left;
+  width: 21%;
+  margin: 2%;
+}
+
+.main-wrapper .apps-section .app-list .app-item img{
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.main-wrapper .apps-section .app-list .app-item .app-title{
+  font-size: 11pt;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.prestashop{
+  font-weight: bold;
+}
+.prestashop .prestashop-pet{
+  background: url('../images/pspet.png');
+  background-size: 24px 24px;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+.prestashop .prestashop-color-1{
+  color: #291544 !important;
+}
+.prestashop .prestashop-color-2{
+  color: #e12f6d !important;
+}
