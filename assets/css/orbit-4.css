@@ -372,7 +372,7 @@ p {
   text-align: center;
 }
 
-.prestashop{
+.prestashop, .woocommerce{
   font-weight: bold;
 }
 .prestashop .prestashop-pet{
@@ -388,4 +388,13 @@ p {
 }
 .prestashop .prestashop-color-2{
   color: #e12f6d !important;
+}
+
+.woocommerce{
+  background: url('../images/woocommerce.png');
+  background-size: 24px 24px;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
 }
