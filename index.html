@@ -17,7 +17,13 @@
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
     <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/orbit-2.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/orbit-6.css">
+    <style type="text/css">
+        .projects-section,
+        .experiences-section{
+            text-align: justify;
+        }
+    </style>
 </head> 
 
 <body>
@@ -29,18 +35,20 @@
                 </div>
                 <!--<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="es_ES" data-type="vertical" data-theme="light" data-vanity="aecarlosae"><a class="LI-simple-link" href='https://ve.linkedin.com/in/aecarlosae?trk=profile-badge'>
                 <h1 class="name">Carlos Espinoza</h1></a></div>-->
-                <h3 class="tagline" style="padding: 10px; text-transform: capitalize;">Desarrollador Full Stack</h3>
+                <h2 class="tagline" style="text-transform: uppercase;">Full Stack Developer</h2>
+                <span><img src="assets/images/venezuela.png" alt="Venezuela Flag" /> Venezuela</span>
+                <br />
             </div><!--//profile-container-->
             
             <div class="contact-container container-block">
                 <h2 class="container-block-title">INFO. DE CONTACTO</h2>
                 <ul class="list-unstyled contact-list">
-                    <li class="twitter"><i class="far fa-circle"></i><a href="https://www.workana.com/freelancer/e8295857ae7a89cdda5b3fd2ec8c2ca0" target="_blank">Perfil Workana</a></li>
                     <li class="linkedin"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/aecarlosae" target="_blank">Carlos Espinoza</a></li>
                     <li class="github"><i class="fab fa-github"></i><a href="https://github.com/aecarlosae" target="_blank">Cuenta Github</a></li>
+                    <li class="stack-overflow"><i class="fab fa-stack-overflow"></i><a href="https://stackoverflow.com/users/3980729/carlos-espinoza" target="_blank">Carlos Espinoza</a></li>
                     <li class="twitter"><i class="fab fa-twitter"></i><a href="https://twitter.com/aecarlosae" target="_blank">@aecarlosae</a></li>
                     <li class="twitter"><i class="fab fa-skype"></i>live:aecarlosae</li>
-                    <li class="stack-overflow"><i class="fab fa-stack-overflow"></i><a href="https://stackoverflow.com/users/3980729/carlos-espinoza" target="_blank">Carlos Espinoza</a></li>
+                    <li class="twitter"><i class="far fa-circle"></i><a href="https://www.workana.com/freelancer/e8295857ae7a89cdda5b3fd2ec8c2ca0" target="_blank">Perfil Workana</a></li>
                     <li class="email"><i class="fas fa-envelope"></i><a href="mailto:aecarlosae@gmail.com">aecarlosae@gmail.com</a></li>
                     <li class="phone"><i class="fas fa-phone"></i><a href="tel:58 412 1397565">(+58) 412 1397565</a></li>
                 </ul>
@@ -112,12 +120,14 @@
                             element.innerHTML = Math.abs(years);
                         }
                         document.body.onload = function () {
-                            setYears(document.getElementById('ca2e-experience-time'));
-                            setYears(document.getElementById('ca2e-age'));
+                            var elements = document.getElementsByClassName('years-from-date');
+                            for (i in elements) {
+                                setYears(elements[i]);
+                            }
                         }
                     </script>
-                    <p style="text-align: justify;">
-                    Ingeniero de Sistemas, graduado en la Universidad Experimental Politécnica de la Fuerza Armada Nacional Bolivariana, Programador / Desarrollador Full Stack con más de <span id="ca2e-experience-time">2012/06/18</span> años de experiencia, Diseñador de Bases de Datos Relacional y No Relacional, Analista de Sistemas. Tengo <span id="ca2e-age">1993/06/18</span> años de edad y actualmente trabajo como Freelancer con distintas organizaciones / empresas en España, Chile, Costa Rica, Argentina, México y Venezuela.
+                    <p style="text-align: justify;">Venezolano, 
+                    Ingeniero de Sistemas, graduado en la Universidad Experimental Politécnica de la Fuerza Armada Nacional, programador / desarrollador Full Stack con más de <span class="years-from-date">2012/06/18</span> años de experiencia, analista de sistemas, diseñador de Bases de datos. Tengo <span class="years-from-date" >1993/06/18</span> años de edad y actualmente trabajo como Freelancer con distintas organizaciones / empresas en España, Chile, Costa Rica, Argentina, México y Venezuela.
                     </p>
                 </div><!--//summary-->
             </section><!--//section-->
@@ -173,6 +183,20 @@
             </section><!--//section-->
 
             <section class="section apps-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-toolbox"></i></span>Desarrollos en <strong>WE ARE MEDIA SOLUTIONS</strong></small></h2>
+                <div class="apps">
+                    <ul class="app-list">
+                        <li class="app-item" title="Módulo para cargas masivas de información vehicular, relación de productos y busquedas de refacciones de vehiculos">
+                            <a href="https://www.autopartesrobot.mx" target="_blank"><img src="assets/images/aprobotmxstore.png" /></a>
+                            <h1 class="app-title">Autopartes Robot Manager 
+                                <br/> <span class="app-technology prestashop"><span class="prestashop-pet"></span> <span class="prestashop-color-1">Presta</span><span class="prestashop-color-2">Shop</span>
+                            </h1>
+                        </li>
+                    </ul>
+                </div><!--//apps-->
+            </section><!--//section-->
+
+            <section class="section apps-section">
                 <h2 class="section-title"><span class="icon-holder"><i class="fas fa-toolbox"></i></span>Desarrollos en Software Ágil Ltda</small></h2>
                 <div class="apps">
                     <ul class="app-list">
@@ -180,8 +204,8 @@
                             <img src="assets/images/chilexpress.gif" />
                             <h1 class="app-title">CHILEXPRESS 
                                 <br/> <span class="app-technology prestashop"><span class="prestashop-pet"></span> <span class="prestashop-color-1">Presta</span><span class="prestashop-color-2">Shop</span>
-                                <br />
-                                <span class="app-technology woocommerce"></span>commerce
+                                <!--<br />
+                                <span class="app-technology woocommerce"></span>commerce-->
                             </h1>
                         </li>
                         <li class="app-item" title="Este módulo/plugin de servicios de transporte de Correos de Chile para Prestashop desarrollado para Software Ágil Ltda - Chile">
@@ -199,40 +223,69 @@
                     </ul>
                 </div><!--//apps-->
             </section><!--//section-->
-
-            <section class="section apps-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-toolbox"></i></span>Desarrollos en <strong>WE ARE MEDIA SOLUTIONS</strong></small></h2>
-                <div class="apps">
-                    <ul class="app-list">
-                        <li class="app-item" title="Módulo para cargas masivas de información vehicular, relación de productos y busquedas de refacciones de vehiculos">
-                            <a href="https://www.autopartesrobot.mx" target="_blank"><img src="assets/images/aprobotmx.png" /></a>
-                            <h1 class="app-title">Autopartes Robot Manager 
-                                <br/> <span class="app-technology prestashop"><span class="prestashop-pet"></span> <span class="prestashop-color-1">Presta</span><span class="prestashop-color-2">Shop</span>
-                            </h1>
-                        </li>
-                        <li class="app-item" title="Tienda">
-                            <a href="https://www.autopartesrobot.mx" target="_blank"><img src="assets/images/aprobotmxstore.png" /></a>
-                            <h1 class="app-title">Tienda Autopartes Robot México 
-                                <br/> <span class="app-technology prestashop"><span class="prestashop-pet"></span> <span class="prestashop-color-1">Presta</span><span class="prestashop-color-2">Shop</span>
-                            </h1>
-                        </li>
-                    </ul>
-                </div><!--//apps-->
-            </section><!--//section-->
             
             <section class="skills-section section">
                 <h2 class="section-title"><span class="icon-holder"><i class="fas fa-tachometer-alt"></i></span>HABILIDADES &amp; COMPETENCIA</h2>
                 <div class="skillset">
                     
                     <div class="item">
-                        <h3 class="level-title">Java / Android Framework</h3>
+                        <h3 class="level-title">C</h3>
+                        <div class="progress level-bar">
+                            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>                                 
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">Java</h3>
+                        <div class="progress level-bar">
+                            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">Python</h3>
+                        <div class="progress level-bar">
+                            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>                              
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">PHP</h3>
+                        <div class="progress level-bar">
+                            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>                               
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">Swift</h3>
+                        <div class="progress level-bar">
+                            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>                               
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">Javascript &amp; <span title="jQuery, Datatable, Bootstrap, Express y más">Librerías</span> </h3>
+                        <div class="progress level-bar">
+                            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>                              
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">SQL</h3>
+                        <div class="progress level-bar">
+                            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>                                 
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">Android Framework & Java</h3>
                         <div class="progress level-bar">
                             <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>                                 
                     </div><!--//item-->   
                     
                     <div class="item">
-                        <h3 class="level-title">Swift / iOS Framework</h3>
+                        <h3 class="level-title">iOS Framework & Swift</h3>
                         <div class="progress level-bar">
                             <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>                                  
@@ -260,7 +313,7 @@
                     </div><!--//item-->
 
                     <div class="item">
-                        <h3 class="level-title">PHP</h3>
+                        <h3 class="level-title">Laravel</h3>
                         <div class="progress level-bar">
                             <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>                               
@@ -271,27 +324,6 @@
                         <div class="progress level-bar">
                             <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>                               
-                    </div><!--//item-->
-
-                    <div class="item">
-                        <h3 class="level-title">Laravel</h3>
-                        <div class="progress level-bar">
-                            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>                               
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Javascript &amp; <span title="jQuery, Datatable, Bootstrap, Express y más">Librerías</span> </h3>
-                        <div class="progress level-bar">
-                            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>                              
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Python</h3>
-                        <div class="progress level-bar">
-                            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>                              
                     </div><!--//item-->
                     
                     <div class="item">
@@ -306,20 +338,6 @@
                         <div class="progress level-bar">
                                 <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>                                
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">C</h3>
-                        <div class="progress level-bar">
-                            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">SQL</h3>
-                        <div class="progress level-bar">
-                            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>                                 
                     </div><!--//item-->
                     
                     <div class="item">
@@ -339,7 +357,7 @@
                     <div class="item">
                         <h3 class="level-title">MongoDB</h3>
                         <div class="progress level-bar">
-                            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>                                 
                     </div><!--//item-->
                     
@@ -353,7 +371,7 @@
                     <div class="item">
                         <h3 class="level-title">Vue.js</h3>
                         <div class="progress level-bar">
-                            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>                                 
                     </div><!--//item-->   
                     
@@ -510,32 +528,18 @@
                 </div><!--//item-->
                 
             </section><!--//section-->
-
-            <!-- <section class="section apps-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-mobile"></i></span>Paolo Zuccaro - Amiko Delivery</a><small style="text-transform: capitalize;"> [Desarrollo Full Stack]</small></h2>
-                
-                <div class="apps" style="text-align: justify;">
-                    <p>
-                        Construcción de 3 Aplicaciones para Android y 2 Aplicaciones para iOS (Amiko Delivery Client, Amiko Delivery Business y Amiko Delivery Driver) y una total restructuración web. Es <strong>el desarrollo más complejo realizado con muchos meses de trabajo que aún continuan junto a Paolo Zuccaro.</strong>
-                        
-                        <br/><br/>
-                        - Sistema Web (Cakephp 3.x)<br/>
-                        - API (Cakephp 3.x)<br/>
-                        - Aplicaciones Android (Java Android)<br/>
-                        - Aplicaciones iOS (Swift)
-                    </p>
-                    <div style="text-align: center;">
-                        <img src="assets/images/amikodelivery.png" />
-                        <p class="app-title">Pronto disponible en <span style="font-size: 20pt"><i class="fab fa-google-play"></i></span> y <span style="font-size: 20pt"><i class="fab fa-app-store"></i></span></p>
-                    </div>
-                </div>
-            </section> -->
             
             <section class="section projects-section">
                 <h2 class="section-title"><span class="icon-holder"><i class="fas fa-archive"></i></span>TRABAJOS REALIZADOS</h2>
                 <div class="intro">
-                    <p>A lo largo de estos más de 7 años de trabajo como programador o desarrollador full stack, he realizado varias tareas para diferentes empresas entre las cuales destacan:</p>
+                    <p>A lo largo de estos más de <span class="years-from-date">2012/06/18</span> años de trabajo como programador o desarrollador full stack, he realizado varias tareas para diferentes empresas entre las cuales destacan:</p>
                 </div><!--//intro-->
+
+                <div class="item">
+                    <span class="project-title"><a href="https://www.autopartesrobot.mx" target="_blank">http://www.autopartesrobot.mx</a></span> - <span class="project-tagline">
+                        Construcción de la la nueva funcionalidad de filtros del sidebar que permite filtrar productos basados en la información vehicular en los resultados de busqueda.
+                    </span>
+                </div><!--//item-->
 
                 <div class="item">
                     <span class="project-title"><a href="https://www.autopartesrobot.mx" target="_blank">http://www.autopartesrobot.mx</a></span> - <span class="project-tagline">En esta tienda realiada en Prestashop, se realicé la construcción de un módulo para carga masiva información vehicular de México (Fabricantes, modelos, submodelos, vehiculos además de cargar toda la información de productos y relacionarlos con la información vehicular. <strong>Tambien se realizó el buscador de refacciones vehicular conforme a los requerimientos</strong></span>
