@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://use.fontawesome.com">
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="../css/styles.min.css" rel="stylesheet" />
+        <link href="../assets/css/styles.min.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -31,9 +31,10 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experiencia</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Educación</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#software-builts">Softwares</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#software-builts">Software</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Intereses</a></li>
                     <li class="nav-item d-md-none"><a class="nav-link js-scroll-trigger" href="../">Versión en Inglés</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contacto</a></li>
                 </ul>
             </div>
             <div class="language-switcher d-none d-md-block">
@@ -50,8 +51,7 @@
                         <span class="text-primary">Espinoza</span>
                     </h1>
                     <div class="subheading mb-5">
-                        Altos de Biruaca · Biruaca, Venezuela 7007 · (58) 412-1397565 ·
-                        <a href="mailto:aecarlosae@gmail.com">aecarlosae@gmail.com</a>
+                        Altos de Biruaca · Biruaca, Venezuela 7007
                     </div>
                     <p class="lead mb-5">
                         Soy <strong>Ingeniero de Sistemas</strong> y <strong>Desarrollador Senior Full Stack</strong> 
@@ -281,7 +281,7 @@
             </section>
             <hr class="m-0" />
 
-            <!-- Softwares -->
+            <!-- Software -->
             <section class="resume-section" id="software-builts">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Mis productos de software</h2>
@@ -350,10 +350,58 @@
                 </div>
             </section>
             <hr class="m-0" />
+            <!-- Contact -->
+            <section class="resume-section" id="contact">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Contacto</h2>
+                    <p>
+                        Siempre estoy abierto a conversar sobre nuevos proyectos, ideas creativas u oportunidades para 
+                        formar parte de tu visión. Ya sea que tengas alguna pregunta, necesites ayuda o quieras colaborar en un proyecto.
+                        <br>
+                        <br>
+                        Para servicios de desarrollo y soporte técnico, no dude en comunicarse conmigo a través del 
+                        siguiente formulario o mi correo electrónico 
+                        <a href="mailto:aecarlosae@gmail.com">aecarlosae@gmail.com</a> o teléfono 
+                        <a href="tel:+584121397565">+58 412-1397565</a>. ¡Espero poder colaborar contigo!
+                    </p>
+                    <br>
+                    
+                    <form
+                        action="../contact/"
+                        method="post"
+                        class="needs-validation"
+                        novalidate
+                        data-success-message="Tu mensaje se ha enviado correctamente. Te responderé pronto."
+                        data-error-message="Se produjo un error al enviar tu mensaje. Inténtalo de nuevo más tarde."
+                        data-error-recaptcha-message="Error en la verificación de reCaptcha. Inténtalo de nuevo.">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Escribe tu nombre completo" required>
+                            <div class="invalid-feedback">Por favor, ingresa tu nombre completo.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Escribe tu correo electrónico" required>
+                            <div class="invalid-feedback">Por favor, ingresa tu correo electrónico.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+                            <div class="invalid-feedback">Por favor, ingresa tu mensaje.</div>
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6LfE6BorAAAAAO8EKNzBH6t78MjdoOjFi3Sk6bkP"></div>
+                        <input type="hidden" name="lang" value="es">
+                        <button type="submit" class="btn btn-primary text-white my-3">Enviar mensaje</button>
+                    </form>
+                </div>
+            </section>
+            <hr class="m-0" />
+            
         </div>
 
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="../js/scripts.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
+        <script src="../assets/js/scripts.js"></script>
     </body>
 </html>
