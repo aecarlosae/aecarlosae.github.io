@@ -3,7 +3,6 @@ namespace Aecarlosae\Site;
 
 use GuzzleHttp\Client as HTTPClient;
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
 
 class Contact
 {
