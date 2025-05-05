@@ -131,26 +131,21 @@ ExpiresByType font/woff2 "access plus 1 month"
 #Alternative caching using Apache's "mod_headers", if it's installed.
 #Caching of common files - ENABLED
 <IfModule mod_headers.c>
+  # 1 YEAR
+  <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|svg|webp)$">
+  Header set Cache-Control "max-age=31536000, public"
+  </FilesMatch>
 
-# 1 YEAR
-<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|svg)$">
-Header set Cache-Control "max-age=31536000, public"
-</FilesMatch>
+  # 2 DAYS
+  <FilesMatch "\.(xml|txt)$">
+  Header set Cache-Control "max-age=172800, public, must-revalidate"
+  </FilesMatch>
 
-# 2 DAYS
-<FilesMatch "\.(xml|txt)$">
-Header set Cache-Control "max-age=172800, public, must-revalidate"
-</FilesMatch>
-
-# 2 HOURS
-<FilesMatch "\.(html|htm)$">
-Header set Cache-Control "max-age=7200, must-revalidate"
-</FilesMatch>
-
-</IfModule>
-
-
-<IfModule mod_headers.c>
+  # 2 HOURS
+  <FilesMatch "\.(html|htm)$">
+  Header set Cache-Control "max-age=7200, must-revalidate"
+  </FilesMatch>
+  
   <FilesMatch "\.(js|css|xml|gz|html|ttf)$">
     Header append Vary: Accept-Encoding
   </FilesMatch>
