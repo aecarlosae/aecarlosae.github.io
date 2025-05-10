@@ -19,11 +19,14 @@
         <link rel="preload" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:700&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:700&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"></noscript>
 
+        <link rel="preload" href="assets/css/print.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='print'"/>
+        <noscript><link rel="stylesheet" href="assets/css/print.min.css" media="print"></noscript>
+
         <link rel="stylesheet" href="assets/css/styles.min.css">
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top printer-d-none" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Carlos Espinoza</span>
                 <span class="d-none d-lg-block">
@@ -73,7 +76,7 @@
                         <li>English (C1)</li>
                     </ul>
 
-                    <div class="social-icons">
+                    <div class="social-icons printer-d-none">
                         <a class="social-icon" href="https://www.linkedin.com/in/aecarlosae" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/aecarlosae" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         <a class="social-icon" href="https://www.upwork.com/freelancers/~01aa2408ae22669ed3" target="_blank" aria-label="Upwork">
@@ -85,13 +88,13 @@
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
+            <hr class="m-0 printer-d-none" />
             <!-- Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
 
-                    <p>
+                    <p class="printer-m-0">
                         I have been working as a Freelancer for many agencies / individuals located in different 
                         countries (Spain, Chile, Argentina, Mexico, Venezuela and Colombia) using platforms as Workana 
                         and Upwork.
@@ -119,7 +122,7 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Full-stack Developer</h3>
-                            <p class="subheading mb-0">Pulsoweb - Spain</p>
+                            <p class="subheading mb-0">Pulso Web - Spain</p>
                             <small class="d-block mb-3">Part time</small>
                             <p>
                                 Improvement of SEO web tools built in Laravel, Vue.js, Python, and other technologies. 
@@ -149,7 +152,7 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Programmer / Analist</h3>
-                            <p class="subheading mb-0">Arbolsistemas Inc - Argentina</p>
+                            <p class="subheading mb-0">Arbol Sistemas Inc. - Argentina</p>
                             <small class="d-block mb-3">Part time</small>
                             <p>
                                 Short but Satisfy experience with much learning. Developed web soluctions using cakephp, 
@@ -191,7 +194,7 @@
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
+            <hr class="m-0 printer-d-none" />
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
@@ -270,9 +273,9 @@
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
+            <hr class="m-0 printer-d-none" />
             <!-- Skills-->
-            <section class="resume-section" id="skills">
+            <section class="resume-section printer-mt" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Skills</h2>
                     <div class="subheading mb-3">Programming Languages & Tools</div>
@@ -343,7 +346,7 @@
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile first
+                            Mobile-first strategy
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -356,7 +359,7 @@
                     </ul>
                 </div>
             </section>
-            <hr class="m-0" />
+            <hr class="m-0 printer-d-none" />
 
             <!-- Software -->
             <section class="resume-section" id="software-builts">
@@ -415,7 +418,7 @@
                         </li>
                     </ul>
             </section>
-            <hr class="m-0" />
+            <hr class="m-0 printer-d-none" />
             <!-- Interests-->
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
@@ -425,7 +428,7 @@
                     </p>
                 </div>
             </section>
-            <hr class="m-0" />
+            <hr class="m-0 printer-d-none" />
             <!-- Contact -->
             <section class="resume-section" id="contact">
                 <div class="resume-section-content">
@@ -435,14 +438,15 @@
                         vision. Whether you have a question, need assistance, or want to collaborate on a project.
                         <br>
                         <br>
-                        For development and technical support services, feel free to reach out to me vía below form or 
-                        my email <a href="mailto:aecarlosae@gmail.com">aecarlosae@gmail.com</a> or phone 
+                        For development and technical support services, feel free to reach out to me vía 
+                        <span class="printer-d-none">below form or</span> my email 
+                        <a href="mailto:aecarlosae@gmail.com">aecarlosae@gmail.com</a> or phone 
                         <a href="tel:+584121397565">+58 412-1397565</a>. I look forward to collaborating with you!
                     </p>
                     <form
                         action="contact/"
                         method="post"
-                        class="needs-validation"
+                        class="needs-validation printer-d-none"
                         novalidate
                         data-success-message="Your message has been sent successfully. I will get back to you soon."
                         data-error-message="There was an error sending your message. Please try again later."
@@ -467,7 +471,7 @@
                     </form>
                 </div>
             </section>
-            <hr class="m-0" />
+            <hr class="m-0 printer-d-none" />
         </div>
 
         <!-- TODO: remove fontawesome -->

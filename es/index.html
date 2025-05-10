@@ -17,12 +17,15 @@
         <!-- Asynchronously css load -->
         <link rel="preload" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:700&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:700&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"></noscript>
+
+        <link rel="preload" href="../assets/css/print.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+        <noscript><link rel="stylesheet" href="../assets/css/print.min.css" media="print"></noscript>
         
         <link rel="stylesheet" href="../assets/css/styles.min.css">
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top printer-d-none" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Carlos Espinoza</span>
                 <span class="d-none d-lg-block">
@@ -61,7 +64,7 @@
                     <p class="lead mb-5">
                         Soy <strong>Ingeniero de Sistemas</strong> y <strong>Desarrollador Senior Full Stack</strong> 
                         con <strong>más de 12 años de experiencia</strong> 
-                        en desarrollo de software, con un fuerte enfoque en plataformas de comercio electrónico <i>PHP</i>, 
+                        en el desarrollo de software, con un fuerte enfoque en plataformas de comercio electrónico <i>PHP</i>, 
                         creando temas, módulos y plugins personalizados para <i>Prestashop, WordPress y WooCommerce, 
                         <strong title="Optimización para motores de busqueda">SEO</strong> & <strong title="Optimización de páginas web">WPO</strong></i></i>. 
                         Experto en el desarrollo de aplicaciones escalables y eficientes en los frameworks <i>Laravel, Symfony y CakePHP</i>.
@@ -72,7 +75,7 @@
                         <li>Inglés (C1)</li>
                     </ul>
 
-                    <div class="social-icons">
+                    <div class="social-icons printer-d-none">
                         <a class="social-icon" href="https://www.linkedin.com/in/aecarlosae" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/aecarlosae" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         <a class="social-icon" href="https://www.upwork.com/freelancers/~01aa2408ae22669ed3" target="_blank" aria-label="Upwork">
@@ -84,14 +87,14 @@
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
+            <hr class="m-0 printer-d-none" />
             <!-- Experience-->
-            <section class="resume-section" id="experience">
+            <section class="resume-section es" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experiencia</h2>
 
-                    <p>
-                        He trabajado como Freelancer para diversas agencias/particulares ubicadas en diferentes países 
+                    <p class="printer-m-0">
+                        He trabajado como freelance para diversas agencias/particulares ubicadas en diferentes países 
                         (España, Chile, Argentina, México, Venezuela y Colombia) utilizando plataformas como Workana y 
                         Upwork.
                     </p>
@@ -192,7 +195,7 @@
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
+            <hr class="m-0 printer-d-none" />
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
@@ -218,7 +221,7 @@
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Free Software Accademy</h3>
+                            <h3 class="mb-0">Academia del Software Libre</h3>
                             <div class="subheading mb-3">Curso</div>
                             <div>PostgreSQL (Bases de datos)</div>
                             <small>
@@ -236,7 +239,7 @@
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Free Software Accademy</h3>
+                            <h3 class="mb-0">Academia del Software Libre</h3>
                             <div class="subheading mb-3">Curso</div>
                             <div>PHP (Programación web)</div>
                             <small>
@@ -254,7 +257,7 @@
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Free Software Accademy</h3>
+                            <h3 class="mb-0">Academia del Software Libre</h3>
                             <div class="subheading mb-3">Curso</div>
                             <div>MySQL (Bases de datos)</div>
                             <small>
@@ -271,9 +274,9 @@
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
+            <hr class="m-0 printer-d-none" />
             <!-- Skills-->
-            <section class="resume-section" id="skills">
+            <section class="resume-section printer-mt" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Habilidades</h2>
                     <div class="subheading mb-3">Lenguajes de programación y herramientas</div>
@@ -344,7 +347,7 @@
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Estrategia Primero Dispositivos Móviles
+                            Estrategia Mobile-first
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -357,7 +360,7 @@
                     </ul>
                 </div>
             </section>
-            <hr class="m-0" />
+            <hr class="m-0 printer-d-none" />
 
             <!-- Software -->
             <section class="resume-section" id="software-builts">
@@ -416,7 +419,7 @@
                         </li>
                     </ul>
             </section>
-            <hr class="m-0" />
+            <hr class="m-0 printer-d-none" />
             <!-- Interests-->
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
@@ -427,14 +430,14 @@
                     </p>
                 </div>
             </section>
-            <hr class="m-0" />
+            <hr class="m-0 printer-d-none" />
             <!-- Contact -->
             <section class="resume-section" id="contact">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Contacto</h2>
                     <p>
                         Siempre estoy abierto a conversar sobre nuevos proyectos, ideas creativas u oportunidades para 
-                        formar parte de tu visión. Ya sea que tengas alguna pregunta, necesites ayuda o quieras colaborar en un proyecto.
+                        formar parte de tu visión. Ya sea que tengas alguna pregunta, necesite ayuda o desee colaboración en un proyecto.
                         <br>
                         <br>
                         Para servicios de desarrollo y soporte técnico, no dude en comunicarse conmigo a través del 
@@ -447,7 +450,7 @@
                     <form
                         action="../contact/"
                         method="post"
-                        class="needs-validation"
+                        class="needs-validation printer-d-none"
                         novalidate
                         data-success-message="Tu mensaje se ha enviado correctamente. Te responderé pronto."
                         data-error-message="Se produjo un error al enviar tu mensaje. Inténtalo de nuevo más tarde."
@@ -473,7 +476,7 @@
                     </form>
                 </div>
             </section>
-            <hr class="m-0" />
+            <hr class="m-0 printer-d-none" />
             
         </div>
 

@@ -1,0 +1,33 @@
+@media print {
+    .printer-d-none {
+        display: none !important;
+    }
+
+    .printer-m-0 {
+        margin: 0 !important;
+    }
+
+    .printer-mt {
+        margin-top: 5rem !important;
+    }
+    p {
+        text-align: justify;
+    }
+
+    body {
+        padding-left: 0 !important;
+    }
+
+    section.resume-section {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        margin: auto;
+        min-height: auto !important;
+    }
+
+    section.resume-section.es {
+        padding-top: 0rem !important;
+        padding-bottom: 0rem !important;
+    }
+    
+}
