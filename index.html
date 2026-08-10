@@ -3,26 +3,58 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="I am a System Engineer and Senior full-stack developer with 
-        12+ years of experience in software development, PHP, e-commerce platforms Prestashop, Wordpress & WooCommerce. 
-        Laravel, Symfony, and CakePHP expert." />
-        <meta name="author" content="" />
-        <title>Carlos Espinoza</title>
+        <meta name="description" content="Senior Full-Stack Developer with 12+ years in PrestaShop, Wordpress & Shopify. High-performance custom web solutions, e-commerce builds, and technical SEO." />
+        <meta name="author" content="Carlos Espinoza" />
+        <title>Carlos Espinoza | Full-Stack Developer & SEO Specialist</title>
         <link rel="icon" type="image/jpg" href="assets/img/profile.jpg" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://www.google.com">
-        <link rel="preconnect" href="https://use.fontawesome.com">
         <link rel="preconnect" href="https://cdn.jsdelivr.net">
         
         <!-- Asynchronously css load -->
         <link rel="preload" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:700&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:700&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"></noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
 
         <link rel="preload" href="assets/css/print.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='print'"/>
         <noscript><link rel="stylesheet" href="assets/css/print.min.css" media="print"></noscript>
-
+        
+        <link rel="preload" href="assets/css/styles.min.css" as="style">
         <link rel="stylesheet" href="assets/css/styles.min.css">
+        <style>
+            body {
+                top: 0 !important;
+            }
+            .skiptranslate, .goog-te-banner-frame {
+                display: none !important;
+            }
+            .goog-te-balloon-frame {
+                display: none !important;
+            }
+            html.translated-ltr body, html.translated-rtl body {
+                top: 0 !important;
+            }
+            
+            select.language-selector {
+                border: 0;
+                background: transparent;
+                padding: 0px;
+                height: 20px;
+                color: #fff !important;
+                font-weight: bold;
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                display: inline-block !important;
+                cursor: pointer;
+                font-family: 'Noto Color Emoji', 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
+            }
+            select.language-selector option {
+                color: #000 !important;
+                font-family: 'Noto Color Emoji', 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -37,21 +69,43 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#software-builts">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills & Tools</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#software-builts">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item d-md-none"><a class="nav-link js-scroll-trigger" href="/es/">Spanish version</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    <li class="nav-item d-md-none">
+                        <form class="language-selector-wrapper" style="display:inline !important;">
+                            <select class="language-selector form-control-sm" aria-label="State">
+                                <option value="es"><span class="notranslate" translate="no">🇪🇸</span> SPANISH</option>
+                                <option value="en" selected><span class="notranslate" translate="no">🇬🇧</span> ENGLISH</option>
+                                <option value="fr"><span class="notranslate" translate="no">🇫🇷</span> FRANCE</option>
+                                <option value="it"><span class="notranslate" translate="no">🇮🇹</span> ITALIAN</option>
+                                <option value="de"><span class="notranslate" translate="no">🇩🇪</span> GERMAN</option>
+                                <option value="pt"><span class="notranslate" translate="no">🇵🇹</span> PORTUGUESE</option>
+                            </select>
+                            <div id="google_translate_element" style="display:none !important;"></div>
+                        </form>
+                    </li>
                 </ul>
             </div>
             <div class="language-switcher d-none d-md-block">
-                <a href="/es/" class="btn btn-sm text-white fw-bold" role="button" aria-label="Switch to Spanish version">Spanish version</a>
+                <form class="language-selector-wrapper" style="display:inline !important;">
+                    <select class="language-selector form-control-sm" aria-label="State">
+                        <option value="es"><span class="notranslate" translate="no">🇪🇸</span> SPANISH</option>
+                        <option value="en" selected><span class="notranslate" translate="no">🇬🇧</span> ENGLISH</option>
+                        <option value="fr"><span class="notranslate" translate="no">🇫🇷</span> FRANCE</option>
+                        <option value="it"><span class="notranslate" translate="no">🇮🇹</span> ITALIAN</option>
+                        <option value="de"><span class="notranslate" translate="no">🇩🇪</span> GERMAN</option>
+                        <option value="pt"><span class="notranslate" translate="no">🇵🇹</span> PORTUGUESE</option>
+                    </select>
+                    <div id="google_translate_element" style="display:none !important;"></div>
+                </form>
             </div>
         </nav>
         <!-- Page Content-->
-        <div class="container-fluid p-0">
+        <main class="container-fluid p-0">
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
@@ -59,21 +113,36 @@
                         Carlos
                         <span class="text-primary">Espinoza</span>
                     </h1>
-                    <div class="subheading mb-5">
-                        Altos de Biruaca · Biruaca, Venezuela 7007
-                    </div>
-                    <p class="lead mb-5">
-                        I'm a <strong>System Engineer</strong> and <strong>Senior Full-Stack Developer</strong> dedicated to delivering exceptional web solutions. With <strong>12+ years in software development</strong>, I have deep expertise in <strong>PHP e-commerce platforms</strong>, including custom theme and module development for <strong>PrestaShop, WordPress/WooCommerce, and Shopify</strong>. My expertise in <strong>Laravel, Symfony, and CakePHP</strong> allows me to build scalable, efficient applications, always with an eye on optimizing for <strong>SEO and Web Performance</strong>.
+                    <p class="subheading mb-5">
+                        Biruaca, Apure, Venezuela
                     </p>
+                    <div class="lead mb-5">
+                        <p>
+                        I am a Systems Engineer and Senior Full-Stack Developer with 12+ years of experience building high-converting e-commerce platforms and scalable web applications.
+                        </p>
+                        <p><span class="fw-bold">What I bring to the table:</span></p>
+                        <ul>
+                            <li><span class="fw-bold">E-Commerce Engineering:</span> Custom themes, scalable modules, and API integrations for PrestaShop, Shopify, and Wordpress & WooCommerce.</li>
+                            <li><span class="fw-bold">Backend Architecture:</span> Clean, maintainable systems using modern PHP ecosystems (Laravel & Symfony).</li>
+                            <li><span class="fw-bold">Performance & SEO:</span> End-to-end technical optimization (Core Web Vitals, speed, and clean code structure) designed to scale traffic and revenue.</li>
+                        </ul>
 
+                        <p>I focus on bridging technical rigor with business outcomes—delivering fast, secure, and easily maintainable software.</p>
+                    </div>
+                    
+                    <p class="lead">Languages:</p>
                     <ul class="lead mb-5">
                         <li>Spanish (Native)</li>
                         <li>English (C1)</li>
                     </ul>
 
                     <div class="social-icons printer-d-none">
-                        <a class="social-icon" href="https://www.linkedin.com/in/aecarlosae" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/aecarlosae" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/aecarlosae" target="_blank" aria-label="LinkedIn">
+                            <img loading="lazy" src="assets/img/linkedin-white.svg" alt="LinkedIn" width="24" height="24"/>
+                        </a>
+                        <a class="social-icon" href="https://github.com/aecarlosae" target="_blank" aria-label="GitHub">
+                            <img loading="lazy" src="assets/img/github-white.svg" alt="GitHub" width="24" height="24"/>
+                        </a>
                         <a class="social-icon" href="https://www.upwork.com/freelancers/~01aa2408ae22669ed3" target="_blank" aria-label="Upwork">
                             <img loading="lazy" src="assets/img/upwork.svg" alt="Upwork" width="24" height="24"/>
                         </a>
@@ -82,6 +151,175 @@
                         </a>
                     </div>
                 </div>
+            </section>
+            <hr class="m-0 printer-d-none" />
+
+            <!-- Software -->
+            <section class="resume-section" id="software-builts">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">My Works</h2>
+                    <p>Below, I present a selection of <strong>my professional journey and the diverse software development</strong> projects in which I have built or actively participated. These works reflect my experience and skills in creating robust and efficient solutions.</p>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://www.blanqsand.com" target="_blank">Blanq Sand | Stabilization, Custom Modules, SEO & WPO</a>
+                            <p>
+                                I audited and stabilized a legacy PrestaShop 1.7 store, fixing critical authentication, email deliverability, and UI bugs. Hardened security via Cloudflare, optimized server hosting, and boosted performance through deep WPO and Technical SEO. Built a custom "Total Look" module and automated Meta Catalog synchronization to drive sales and social commerce integration.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://www.tamscar-audio.es" target="_blank">Tamscar Audio | Full-Scale Migration & Optimization - PrestaShop 1.7 to 9</a>
+                            <p>
+                                I Led the complete migration from PrestaShop 1.7 to PrestaShop 9, developing a bespoke child theme, managing hosting, and hardening security via Cloudflare. Engineered several custom modules—including audio sync, payment restriction, and security integrations—while ensuring seamless compatibility for PayPal, Redsys, and Holded ERP. Delivered end-to-end WPO and Technical SEO to boost loading speeds and search performance.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://biokombucha.es" target="_blank">Bio Kombucha</a>
+                            <p>
+                                I improved Bio Kombucha, a healthy natural drink company, by integrating <span class="fw-bold">Stripe</span> as a payment gateway and subscription products. This store was built with <span class="fw-bold">Prestashop</span> and some third-party modules, which I improved and adapted according to customer's needs. 
+                                I improved the SEO and optimized its performance and user experience through various optimizations. I build a custom banner module to enhance promotions and user engagement of subscription products.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://maquinariabosca.com" target="_blank">Maquinaria Bosca</a>
+                            <p>
+                                I developed the Maquinaria Bosca website from scratch using <span class="fw-bold">WordPress</span> and <span class="fw-bold">WooCommerce</span>, building pages based on client-provided designs. I utilized <span class="fw-bold">Elementor</span> for page creation and Advanced Custom Fields for custom product data. The site includes plugins such as Complianz (GDPR/CCPA Cookie Consent), JetSmartFilters, Premmerce Permalink Manager, YITH WooCommerce Catalog Mode, and Yoast SEO, all configured to meet project requirements. I also managed SEO and optimized site performance.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://www.onekeypayments.com" target="_blank">One Key Payments</a>
+                            <p>
+                                I collaborated on the development of this website, focusing on enhancing user experience through improved animations and smooth interactions. My responsibilities included managing translations, updating page content, and ensuring the site remained visually appealing and responsive. The project was built using <span class="fw-bold">Webflow</span>, which enabled efficient design and implementation of modern web features.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://www.d24.com" target="_blank">D24</a>
+                            <p>
+                                I collaborated on the D24 project using Webflow, working closely with a colleague to build most of the site’s pages and implement engaging animations for an enhanced user experience. I developed dynamic menu functionality with JavaScript based on client requirements and leveraged Webflow’s CMS to efficiently manage dynamic content. The site was crafted from a Figma design provided by the client, utilizing reusable components for consistency. Additionally, I integrated the Swiper library to create interactive sliders and carousels, further improving the site’s visual appeal and interactivity.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://sxs.turtech.travel" target="_blank">Semana por la sostenibilidad</a>
+                            <p>
+                                I collaborated on the development of this website, a web application for a travel company dedicated to sustainable tourism. Using <span class="fw-bold">WordPress</span> and the <span class="fw-bold">Elementor</span> plugin, I translated a Figma design into a fully functional website that promotes eco-friendly travel options.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://tiendagarciafloquet.com" target="_blank">García Floquet Arquitectos</a>
+                            <p>I developed this website entirely from scratch for an architecture firm, showcasing their projects and services with a modern design and user-friendly interface using <span class="fw-bold">Wordpress</span>, <span class="fw-bold">Elementor</span>, <span class="fw-bold">WooCommerce</span>.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://tiendajamesandmau.com" target="_blank">James & Mau</a>
+                            <p>I developed this website entirely from scratch for an architecture firm, showcasing their projects and services with a modern design and user-friendly interface using <span class="fw-bold">Wordpress</span>, <span class="fw-bold">Elementor</span>, <span class="fw-bold">WooCommerce</span>.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://mesetaarquitectos.es" target="_blank">MESETA Arquitectura</a>
+                            <p>I developed this website entirely from scratch for an architecture firm, showcasing their projects and services with a modern design and user-friendly interface using <span class="fw-bold">Wordpress</span>, <span class="fw-bold">Elementor</span>, <span class="fw-bold">WooCommerce</span>.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://pipichu.es" target="_blank">Pipichu</a>
+                            <p>I developed this website for a children's clothing brand, featuring an online store and a blog with parenting tips. I used <span class="fw-bold">Prestashop</span> as CMS and translated Adobe design into a fully functional website. I made <span class="fw-bold">SEO and WPO</span> for better ranking.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://suministrointec.com" target="_blank">Suministros Intec</a>
+                            <p>Created a website for an industrial supply company, showcasing their products and services with a focus on B2B sales. I used <span class="fw-bold">Prestashop</span> as CMS and translated Adobe design into a fully functional website. I made <span class="fw-bold">SEO and WPO</span> for better ranking.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://calzadosbienve.com" target="_blank">Calzados Bienve, S.L</a>
+                            <p>Developed a website for a shoe company, featuring an online store and a blog with fashion tips. I used <span class="fw-bold">Prestashop</span> as CMS and translated Adobe design into a fully functional website. I made <span class="fw-bold">SEO and WPO</span> for better ranking.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://marialuisamaestre.es" target="_blank">Maria Luisa Maestre</a>
+                            <p>Developed an online store for a clothing brand, featuring product catalog, shopping cart, and secure checkout. I used <span class="fw-bold">Prestashop</span> as CMS and translated Adobe design into a fully functional website. I made <span class="fw-bold">SEO and WPO</span> for better ranking.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://www.pinturasalfaz.com" target="_blank">Pinturas Alfaz</a>
+                            <p>Developed a website for a paint company, showcasing their products and services with a focus on user engagement. I used <span class="fw-bold">Prestashop</span> as CMS and translated Adobe design into a fully functional website. I made <span class="fw-bold">SEO and WPO</span> for better ranking.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://www.shalbaida.com" target="_blank">Shalbaida</a>
+                            <p>Developed a website for a clothing shop, featuring an online catalog, shopping cart, and customer reviews. I used <span class="fw-bold">Prestashop</span> as CMS and translated Adobe design into a fully functional website. I made <span class="fw-bold">SEO and WPO</span> for better ranking.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="http://catastro.alcaldiadesanfernando.gob.ve/users/login" target="_blank">
+                                Sistema Integrado de Gestión Catastral y Administración Tributária
+                            </a>
+                            <p>
+                                I designed and developed the Integrated Cadastre and Tax Management System from the ground up using <span class="fw-bold">CakePHP 2.x</span>, <span class="fw-bold">JavaScript</span>, <span class="fw-bold">jQuery</span>, <span class="fw-bold">Bootstrap</span>, <span class="fw-bold">HTML5</span>, <span class="fw-bold">CSS3</span>, <span class="fw-bold">PostgreSQL</span>, and the <span class="fw-bold">TCPDF PDF library</span>. The system includes user authentication, property listings, tax calculation modules, comprehensive reporting dashboards, and PDF document generation. I managed deployment on a secure <span class="fw-bold">Linux server</span>, provided user training and ongoing support, and ensured reliability through thorough testing and debugging. The project features robust documentation, version control with <span class="fw-bold">Git</span>, and security measures to protect sensitive data. Since its launch in 2015, the system has remained scalable, maintainable, and actively used by the municipal government.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="#" target="_blank">Google reCaptcha for <span class="fw-bold">Prestashop</span></a>
+                            <p>Implemented <span class="fw-bold">Google reCaptcha</span> for <span class="fw-bold">Prestashop</span>, enhancing security and reducing spam in user registrations and contact forms.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="#" target="_blank">Chilexpress for <span class="fw-bold">Prestashop</span></a>
+                            <p>Integrated <span class="fw-bold">Chilexpress</span> shipping solutions into <span class="fw-bold">Prestashop</span>, streamlining logistics and improving delivery options for customers.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="#" target="_blank">Correos de chile for <span class="fw-bold">Prestashop</span></a>
+                            <p>Integrated <span class="fw-bold">Correos de Chile</span> shipping solutions into <span class="fw-bold">Prestashop</span>, enhancing delivery options and tracking for customers.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="#" target="_blank">Webpay for <span class="fw-bold">Prestashop</span></a>
+                            <p>Integrated <span class="fw-bold">Webpay</span> payment solutions into <span class="fw-bold">Prestashop</span>, enabling secure online transactions for customers.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="#" target="_blank">Webpay One Click Mall for <span class="fw-bold">Prestashop</span></a>
+                            <p>Integrated <span class="fw-bold">Webpay One Click Mall</span> into <span class="fw-bold">Prestashop</span>, simplifying the checkout process for customers.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://sendu.cl/prestashop/" target="_blank">Sendu for <span class="fw-bold">Prestashop</span></a>
+                            <p>Integrated <span class="fw-bold">Sendu</span> shipping solutions into <span class="fw-bold">Prestashop</span>, enhancing delivery options and tracking for customers.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://sendu.cl/woocommerce/" target="_blank">Sendu for <span class="fw-bold">Woocommerce</span></a>
+                            <p>Integrated Sendu shipping solutions into Woocommerce, enhancing delivery options and tracking for customers.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://developers.starken.cl/plugins" target="_blank">Starken for <span class="fw-bold">Prestashop</span></a>
+                            <p>Integrated <span class="fw-bold">Starken</span> shipping solutions into <span class="fw-bold">Prestashop</span>, enhancing delivery options and tracking for customers.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="https://developers.starken.cl/plugins" target="_blank">Starken for <span class="fw-bold">Woocommerce</span></a>
+                            <p>Integrated <span class="fw-bold">Starken</span> shipping solutions into <span class="fw-bold">Woocommerce</span>, enhancing delivery options and tracking for customers.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="#" target="_blank">Instapago for <span class="fw-bold">Prestashop</span></a>
+                            <p>Integrated <span class="fw-bold">Instapago</span> payment solutions into <span class="fw-bold">Prestashop</span>, enabling secure online transactions for customers.</p>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <a href="#" target="_blank">Webpay One Click Mall for <span class="fw-bold">Woocommerce</span></a>
+                            <p>Integrated <span class="fw-bold">Webpay One Click Mall</span> into <span class="fw-bold">Woocommerce</span>, simplifying the checkout process for customers.</p>
+                        </li>
+                    </ul>
             </section>
             <hr class="m-0 printer-d-none" />
             <!-- Experience-->
@@ -275,12 +513,24 @@
                     <h2 class="mb-5">Skills</h2>
                     <div class="subheading mb-3">Programming Languages & Tools</div>
                     <ul class="list-inline dev-icons">
-                        <li class="list-inline-item" title="HTML 5"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item" title="CSS 3"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item" title="JavaScript"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item" title="Node.js"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item" title="WordPress"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item" title="NPM"><i class="fab fa-npm"></i></li>
+                        <li class="list-inline-item" title="HTML 5">
+                            <img loading="lazy" src="assets/img/html5.svg" alt="Composer" width="48" height="48" />
+                        </li>
+                        <li class="list-inline-item" title="CSS 3">
+                            <img loading="lazy" src="assets/img/css3.svg" alt="Composer" width="48" height="48" />
+                        </li>
+                        <li class="list-inline-item" title="JavaScript">
+                            <img loading="lazy" src="assets/img/js.svg" alt="Composer" width="48" height="48" />
+                        </li>
+                        <li class="list-inline-item" title="Node.js">
+                            <img loading="lazy" src="assets/img/nodejs.svg" alt="Composer" width="48" height="48" />
+                        </li>
+                        <li class="list-inline-item" title="WordPress">
+                            <img loading="lazy" src="assets/img/wordpress.svg" alt="Composer" width="48" height="48" />
+                        </li>
+                        <li class="list-inline-item" title="NPM">
+                            <img loading="lazy" src="assets/img/npm.svg" alt="Composer" width="48" height="48" />
+                        </li>
                         <li class="list-inline-item" title="PrestaShop">
                             <img loading="lazy" src="assets/img/prestashop.ico" alt="Prestashop" width="48" height="48" />
                         </li>
@@ -290,7 +540,9 @@
                         <li class="list-inline-item" title="CakePHP">
                             <img loading="lazy" src="assets/img/cakephp.svg" alt="CakePHP" width="48" height="48" />
                         </li>
-                        <li class="list-inline-item" title="Symfony"><i class="fab fa-symfony"></i></li>
+                        <li class="list-inline-item" title="Symfony">
+                            <img loading="lazy" src="assets/img/symfony.svg" alt="Composer" width="48" height="48" />
+                        </li>
                         <li class="list-inline-item" title="Laravel"><i class="fab fa-laravel"></i></li>
                         <li class="list-inline-item" title="Vue.js"><i class="fab fa-vuejs"></i></li>
                         <li class="list-inline-item" title="Vite.js">
@@ -305,13 +557,27 @@
                         <li class="list-inline-item" title="Tailwind CSS">
                             <img loading="lazy" src="assets/img/tailwindcss.svg" alt="Tailwind CSS" width="48" height="48" />
                         </li>
-                        <li class="list-inline-item" title="Git"><i class="fab fa-git"></i></li>
-                        <li class="list-inline-item" title="Github"><i class="fab fa-github"></i></li>
-                        <li class="list-inline-item" title="Gitlab"><i class="fab fa-gitlab"></i></li>
-                        <li class="list-inline-item" title="Bitbucket"><i class="fab fa-bitbucket"></i></li>
-                        <li class="list-inline-item" title="Jira"><i class="fab fa-jira"></i></li>
-                        <li class="list-inline-item" title="Java"><i class="fab fa-java"></i></li>
-                        <li class="list-inline-item" title="Python"><i class="fab fa-python"></i></li>
+                        <li class="list-inline-item" title="Git">
+                            <img loading="lazy" src="assets/img/git.svg" alt="Composer" width="48" height="48" />
+                        </li>
+                        <li class="list-inline-item" title="Github">
+                            <img loading="lazy" src="assets/img/github.svg" alt="Composer" width="48" height="48" />
+                        </li>
+                        <li class="list-inline-item" title="Gitlab">
+                            <img loading="lazy" src="assets/img/gitlab.svg" alt="Composer" width="48" height="48" />
+                        </li>
+                        <li class="list-inline-item" title="Bitbucket">
+                            <img loading="lazy" src="assets/img/bitbucket.svg" alt="Composer" width="48" height="48" />
+                        </i></li>
+                        <li class="list-inline-item" title="Jira">
+                            <img loading="lazy" src="assets/img/jira.svg" alt="Composer" width="48" height="48" />
+                        </li>
+                        <li class="list-inline-item" title="Java">
+                            <img loading="lazy" src="assets/img/java.svg" alt="Composer" width="48" height="48" />
+                        </li>
+                        <li class="list-inline-item" title="Python">
+                            <img loading="lazy" src="assets/img/python.svg" alt="Composer" width="48" height="48" />
+                        </li>
                         <li class="list-inline-item" title="Composer">
                             <img loading="lazy" src="assets/img/composer.svg" alt="Composer" width="48" height="48" />
                         </li>
@@ -360,168 +626,14 @@
                     </ul>
                 </div>
             </section>
-            <hr class="m-0 printer-d-none" />
 
-            <!-- Software -->
-            <section class="resume-section" id="software-builts">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">My Works</h2>
-                    <p>Below, I present a selection of <strong>my professional journey and the diverse software development</strong> projects in which I have built or actively participated. These works reflect my experience and skills in creating robust and efficient solutions.</p>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://biokombucha.es" target="_blank">Bio Kombucha</a>
-                            <p>
-                                I improved Bio Kombucha, a healthy natural drink company, by integrating <span class="fw-bold">Stripe</span> as a payment gateway and subscription products. This store was built with <span class="fw-bold">Prestashop</span> and some third-party modules, which I improved and adapted according to customer's needs. 
-                                I improved the SEO and optimized its performance and user experience through various optimizations. I build a custom banner module to enhance promotions and user engagement of subscription products.
-                            </p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://maquinariabosca.com" target="_blank">Maquinaria Bosca</a>
-                            <p>
-                                I developed the Maquinaria Bosca website from scratch using <span class="fw-bold">WordPress</span> and <span class="fw-bold">WooCommerce</span>, building pages based on client-provided designs. I utilized <span class="fw-bold">Elementor</span> for page creation and Advanced Custom Fields for custom product data. The site includes plugins such as Complianz (GDPR/CCPA Cookie Consent), JetSmartFilters, Premmerce Permalink Manager, YITH WooCommerce Catalog Mode, and Yoast SEO, all configured to meet project requirements. I also managed SEO and optimized site performance.
-                            </p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://www.onekeypayments.com" target="_blank">One Key Payments</a>
-                            <p>
-                                I collaborated on the development of this website, focusing on enhancing user experience through improved animations and smooth interactions. My responsibilities included managing translations, updating page content, and ensuring the site remained visually appealing and responsive. The project was built using <span class="fw-bold">Webflow</span>, which enabled efficient design and implementation of modern web features.
-                            </p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://www.d24.com" target="_blank">D24</a>
-                            <p>
-                                I collaborated on the D24 project using Webflow, working closely with a colleague to build most of the site’s pages and implement engaging animations for an enhanced user experience. I developed dynamic menu functionality with JavaScript based on client requirements and leveraged Webflow’s CMS to efficiently manage dynamic content. The site was crafted from a Figma design provided by the client, utilizing reusable components for consistency. Additionally, I integrated the Swiper library to create interactive sliders and carousels, further improving the site’s visual appeal and interactivity.
-                            </p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://sxs.turtech.travel" target="_blank">Semana por la sostenibilidad</a>
-                            <p>
-                                I collaborated on the development of this website, a web application for a travel company dedicated to sustainable tourism. Using <span class="fw-bold">WordPress</span> and the <span class="fw-bold">Elementor</span> plugin, I translated a Figma design into a fully functional website that promotes eco-friendly travel options.
-                            </p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://tiendagarciafloquet.com" target="_blank">García Floquet Arquitectos</a>
-                            <p>I developed this website entirely from scratch for an architecture firm, showcasing their projects and services with a modern design and user-friendly interface using <span class="fw-bold">Wordpress</span>, <span class="fw-bold">Elementor</span>, <span class="fw-bold">WooCommerce</span>.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://tiendajamesandmau.com" target="_blank">James & Mau</a>
-                            <p>I developed this website entirely from scratch for an architecture firm, showcasing their projects and services with a modern design and user-friendly interface using <span class="fw-bold">Wordpress</span>, <span class="fw-bold">Elementor</span>, <span class="fw-bold">WooCommerce</span>.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://mesetaarquitectos.es" target="_blank">MESETA Arquitectura</a>
-                            <p>I developed this website entirely from scratch for an architecture firm, showcasing their projects and services with a modern design and user-friendly interface using <span class="fw-bold">Wordpress</span>, <span class="fw-bold">Elementor</span>, <span class="fw-bold">WooCommerce</span>.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://pipichu.es" target="_blank">Pipichu</a>
-                            <p>I developed this website for a children's clothing brand, featuring an online store and a blog with parenting tips. I used <span class="fw-bold">Prestashop</span> as CMS and translated Adobe design into a fully functional website. I made <span class="fw-bold">SEO and WPO</span> for better ranking.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://suministrointec.com" target="_blank">Suministros Intec</a>
-                            <p>Created a website for an industrial supply company, showcasing their products and services with a focus on B2B sales. I used <span class="fw-bold">Prestashop</span> as CMS and translated Adobe design into a fully functional website. I made <span class="fw-bold">SEO and WPO</span> for better ranking.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://calzadosbienve.com" target="_blank">Calzados Bienve, S.L</a>
-                            <p>Developed a website for a shoe company, featuring an online store and a blog with fashion tips. I used <span class="fw-bold">Prestashop</span> as CMS and translated Adobe design into a fully functional website. I made <span class="fw-bold">SEO and WPO</span> for better ranking.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://marialuisamaestre.es" target="_blank">Maria Luisa Maestre</a>
-                            <p>Developed an online store for a clothing brand, featuring product catalog, shopping cart, and secure checkout. I used <span class="fw-bold">Prestashop</span> as CMS and translated Adobe design into a fully functional website. I made <span class="fw-bold">SEO and WPO</span> for better ranking.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://www.pinturasalfaz.com" target="_blank">Pinturas Alfaz</a>
-                            <p>Developed a website for a paint company, showcasing their products and services with a focus on user engagement. I used <span class="fw-bold">Prestashop</span> as CMS and translated Adobe design into a fully functional website. I made <span class="fw-bold">SEO and WPO</span> for better ranking.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://www.shalbaida.com" target="_blank">Shalbaida</a>
-                            <p>Developed a website for a clothing shop, featuring an online catalog, shopping cart, and customer reviews. I used <span class="fw-bold">Prestashop</span> as CMS and translated Adobe design into a fully functional website. I made <span class="fw-bold">SEO and WPO</span> for better ranking.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="http://catastro.alcaldiadesanfernando.gob.ve/users/login" target="_blank">
-                                Sistema Integrado de Gestión Catastral y Administración Tributária
-                            </a>
-                            <p>
-                                I designed and developed the Integrated Cadastre and Tax Management System from the ground up using <span class="fw-bold">CakePHP 2.x</span>, <span class="fw-bold">JavaScript</span>, <span class="fw-bold">jQuery</span>, <span class="fw-bold">Bootstrap</span>, <span class="fw-bold">HTML5</span>, <span class="fw-bold">CSS3</span>, <span class="fw-bold">PostgreSQL</span>, and the <span class="fw-bold">TCPDF PDF library</span>. The system includes user authentication, property listings, tax calculation modules, comprehensive reporting dashboards, and PDF document generation. I managed deployment on a secure <span class="fw-bold">Linux server</span>, provided user training and ongoing support, and ensured reliability through thorough testing and debugging. The project features robust documentation, version control with <span class="fw-bold">Git</span>, and security measures to protect sensitive data. Since its launch in 2015, the system has remained scalable, maintainable, and actively used by the municipal government.
-                            </p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="#" target="_blank">Google reCaptcha for <span class="fw-bold">Prestashop</span></a>
-                            <p>Implemented <span class="fw-bold">Google reCaptcha</span> for <span class="fw-bold">Prestashop</span>, enhancing security and reducing spam in user registrations and contact forms.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="#" target="_blank">Chilexpress for <span class="fw-bold">Prestashop</span></a>
-                            <p>Integrated <span class="fw-bold">Chilexpress</span> shipping solutions into <span class="fw-bold">Prestashop</span>, streamlining logistics and improving delivery options for customers.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="#" target="_blank">Correos de chile for <span class="fw-bold">Prestashop</span></a>
-                            <p>Integrated <span class="fw-bold">Correos de Chile</span> shipping solutions into <span class="fw-bold">Prestashop</span>, enhancing delivery options and tracking for customers.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="#" target="_blank">Webpay for <span class="fw-bold">Prestashop</span></a>
-                            <p>Integrated <span class="fw-bold">Webpay</span> payment solutions into <span class="fw-bold">Prestashop</span>, enabling secure online transactions for customers.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="#" target="_blank">Webpay One Click Mall for <span class="fw-bold">Prestashop</span></a>
-                            <p>Integrated <span class="fw-bold">Webpay One Click Mall</span> into <span class="fw-bold">Prestashop</span>, simplifying the checkout process for customers.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://sendu.cl/prestashop/" target="_blank">Sendu for <span class="fw-bold">Prestashop</span></a>
-                            <p>Integrated <span class="fw-bold">Sendu</span> shipping solutions into <span class="fw-bold">Prestashop</span>, enhancing delivery options and tracking for customers.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://sendu.cl/woocommerce/" target="_blank">Sendu for <span class="fw-bold">Woocommerce</span></a>
-                            <p>Integrated Sendu shipping solutions into Woocommerce, enhancing delivery options and tracking for customers.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://developers.starken.cl/plugins" target="_blank">Starken for <span class="fw-bold">Prestashop</span></a>
-                            <p>Integrated <span class="fw-bold">Starken</span> shipping solutions into <span class="fw-bold">Prestashop</span>, enhancing delivery options and tracking for customers.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="https://developers.starken.cl/plugins" target="_blank">Starken for <span class="fw-bold">Woocommerce</span></a>
-                            <p>Integrated <span class="fw-bold">Starken</span> shipping solutions into <span class="fw-bold">Woocommerce</span>, enhancing delivery options and tracking for customers.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="#" target="_blank">Instapago for <span class="fw-bold">Prestashop</span></a>
-                            <p>Integrated <span class="fw-bold">Instapago</span> payment solutions into <span class="fw-bold">Prestashop</span>, enabling secure online transactions for customers.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <a href="#" target="_blank">Webpay One Click Mall for <span class="fw-bold">Woocommerce</span></a>
-                            <p>Integrated <span class="fw-bold">Webpay One Click Mall</span> into <span class="fw-bold">Woocommerce</span>, simplifying the checkout process for customers.</p>
-                        </li>
-                    </ul>
-            </section>
             <hr class="m-0 printer-d-none" />
             <!-- Interests-->
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
                     <p>
-                        Besides being a full-stack developer, I enjoy most of my time road cycling 🚴 and learning new things 👨‍💻.
+                        Outside of software engineering, I’m an avid road cyclist 🚴 and a continuous learner 👨‍💻—constantly testing new frameworks, optimizing workflows, and pushing my endurance on the tarmac.
                     </p>
                 </div>
             </section>
@@ -540,7 +652,7 @@
                         <a href="mailto:aecarlosae@gmail.com">aecarlosae@gmail.com</a> or phone 
                         <a href="tel:+584121397565">+58 412-1397565</a>. I look forward to collaborating with you!
                     </p>
-                    <form
+                    <!--<form
                         action="contact/"
                         method="post"
                         class="needs-validation printer-d-none"
@@ -563,18 +675,164 @@
                             <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
                             <div class="invalid-feedback">Please enter your message.</div>
                         </div>
-                        <div class="g-recaptcha" data-sitekey="6LfE6BorAAAAAO8EKNzBH6t78MjdoOjFi3Sk6bkP"></div>
+                        <div id="g-recaptcha"></div>
                         <button type="submit" class="btn btn-primary text-white my-3 fw-bold">Send Message</button>
-                    </form>
+                    </form>-->
                 </div>
             </section>
             <hr class="m-0 printer-d-none" />
-        </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous" async></script>
+        <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+        <!-- <script>
+            // How this code snippet works:
+            // This logic overwrites the default behavior of `grecaptcha.ready()` to
+            // ensure that it can be safely called at any time. When `grecaptcha.ready()`
+            // is called before reCAPTCHA is loaded, the callback function that is passed
+            // by `grecaptcha.ready()` is enqueued for execution after reCAPTCHA is
+            // loaded.
+            if(typeof grecaptcha === 'undefined') {
+                grecaptcha = {
+                ready: function(cb) {
+                    // window.__grecaptcha_cfg is a global variable that stores reCAPTCHA's
+                    // configuration. By default, any functions listed in its 'fns' property
+                    // are automatically executed when reCAPTCHA loads.
+                    const c = '___grecaptcha_cfg';
+                    window[c] = window[c] || {};
+                    (window[c]['fns'] = window[c]['fns'] || []).push(cb);
+                }
+                };
+            }
 
-        <!-- TODO: remove fontawesome -->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous" defer></script>
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+            grecaptcha.ready(function(){
+                grecaptcha.render("g-recaptcha", {
+                    sitekey: "6LfE6BorAAAAAO8EKNzBH6t78MjdoOjFi3Sk6bkP"
+                });
+            });
+        </script> -->
         <script src="assets/js/scripts.js" defer></script>
+
+        <script type="text/javascript">
+            // Escuchador en JavaScript Nativo (Evita el error "$ is not defined")
+            document.addEventListener("DOMContentLoaded", function() {
+                var visualSelects = document.querySelectorAll('.language-selector');
+                visualSelects.forEach(function(visualSelect) {
+                    if (visualSelect) {
+                        // 1. Sincronizar el selector con el idioma actual de la cookie antes de que el usuario interactúe
+                        ca2eSyncSelectorWithCookie(visualSelect);
+                        
+                        visualSelect.addEventListener('change', function() {
+                            ca2eChangeLanguage(this.value);
+                        });
+                    }
+                });
+            });
+
+            function ca2eGoogleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,es,fr,de,it,pt',
+                    autoDisplay: false
+                }, 'google_translate_element');
+                
+                ca2eProtectIcons();
+            }
+
+            function ca2eChangeLanguage(langCode) {
+                var checkExist = setInterval(function() {
+                    var selectField = document.querySelector("#google_translate_element select");
+                    if (selectField) {
+                        selectField.value = langCode;
+                        selectField.dispatchEvent(new Event('change'));
+                        clearInterval(checkExist);
+                    }
+                }, 100);
+                
+                setTimeout(function() { clearInterval(checkExist); }, 3000);
+            }
+            
+            // Nueva función para leer la cookie de Google y marcar el "selected" correcto
+            function ca2eSyncSelectorWithCookie(visualSelect) {
+                // Busca la cookie 'googtrans' que Google Translate crea automáticamente
+                var matches = document.cookie.match(new RegExp('(?:^|; )googtrans=([^;]*)'));
+                if (matches) {
+                    var cookieValue = decodeURIComponent(matches[1]); // Ej: "/en/es"
+                    var langParts = cookieValue.split('/');
+                    if (langParts.length >= 3) {
+                        var currentLang = langParts[2]; // Esto nos dará 'es', 'fr', etc.
+                        
+                        // Cambiamos el valor del selector visual para que coincida
+                        if (visualSelect.querySelector('option[value="' + currentLang + '"]')) {
+                            visualSelect.value = currentLang;
+                        }
+                    }
+                } else {
+                    // Si no hay cookie, por defecto dejamos el idioma base (en)
+                    visualSelect.value = 'en';
+                }
+            }
+
+            function ca2eProtectIcons() {
+                var icons = document.querySelectorAll('.material-icons, .material-icons-outlined, .fa, .fas');
+                icons.forEach(function(icon) {
+                    icon.classList.add('notranslate');
+                    icon.setAttribute('translate', 'no');
+                });
+                
+                var pages = document.querySelectorAll('.page-cms-84 .elementor-heading-title, .page-cms-84 p a');
+                pages.forEach(function(page) {
+                    page.classList.add('notranslate');
+                    page.setAttribute('translate', 'no');
+                });
+                
+                var submenus = document.querySelectorAll('#cbp-hrmenu-tab-33 .iqitmegamenu-submenu-container ul li a, #cbp-hrmenu-tab-11 .iqitmegamenu-submenu-container ul li a');
+                submenus.forEach(function(submenu) {
+                    submenu.classList.add('notranslate');
+                    submenu.setAttribute('translate', 'no');
+                });
+                
+
+                const contactInfoAddress = document.querySelector('#contact-infos .contact__infos');
+                if (contactInfoAddress) {
+                    contactInfoAddress.classList.add('notranslate');
+                    contactInfoAddress.setAttribute('translate', 'no');
+                }
+                
+                // --- NUEVA PROTECCIÓN PARA EL ENLACE DE TOTAL LOOKS ---
+                // Buscamos el enlace específico por su atributo href
+                var totalLooksLink = document.querySelector('a[href*="/total-looks"]');
+                if (totalLooksLink) {
+                    // Protegemos el enlace completo
+                    totalLooksLink.classList.add('notranslate');
+                    totalLooksLink.setAttribute('translate', 'no');
+                    
+                    // Protegemos también el span interno por seguridad
+                    var totalLooksSpan = totalLooksLink.querySelector('.cbp-tab-title');
+                    if (totalLooksSpan) {
+                        totalLooksSpan.classList.add('notranslate');
+                        totalLooksSpan.setAttribute('translate', 'no');
+                    }
+                }
+                // ------------------------------------------------------
+            }    
+            
+            (function() {
+                var googleTranslateScript = document.createElement('script');
+                googleTranslateScript.type = 'text/javascript';
+                googleTranslateScript.async = true;
+                googleTranslateScript.src = 'https://translate.google.com/translate_a/element.js?cb=ca2eGoogleTranslateElementInit';
+                ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( googleTranslateScript );
+            })();
+        </script>
+
+        <script type="text/javascript">
+            // 1. Create the link element
+            const canonicalLink = document.createElement('link');
+            // 2. Set the appropriate attributes
+            canonicalLink.setAttribute('rel', 'canonical');
+            canonicalLink.href = window.location.protocol + '//' + window.location.host + window.location.pathname;
+            // 3. Append it to the document head
+            document.head.appendChild(canonicalLink);
+        </script>
     </body>
 </html>

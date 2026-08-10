@@ -4,17 +4,7 @@
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
 */
 
-window.addEventListener('DOMContentLoaded', event => {
-
-    // Activate Bootstrap scrollspy on the main nav element
-    const sideNav = document.body.querySelector('#sideNav');
-    if (sideNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#sideNav',
-            rootMargin: '0px 0px -40%',
-        });
-    };
-
+window.addEventListener('upload', () => {
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
@@ -35,7 +25,7 @@ window.addEventListener('DOMContentLoaded', event => {
             form.addEventListener('submit', function (event) {
                 if (!form.checkValidity()) {
                     event.preventDefault();
-                    event.stopPropagation();
+                    event.stopPropagaxtion();
                 }
                 form.classList.add('was-validated');
             }, false);
@@ -51,8 +41,6 @@ window.addEventListener('DOMContentLoaded', event => {
                 form.insertBefore(notificationMessage, form.firstChild);
             }
 
-            console.log(form.dataset);
-
             if (urlParams.has('error') && urlParams.get('error') == '500') {
                 notificationMessage.className = 'alert alert-danger mt-3';
                 notificationMessage.textContent = form.dataset.errorRecaptchaMessage;
@@ -64,4 +52,16 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     })();
+});
+
+
+// Activate Bootstrap scrollspy on the main nav element
+window.addEventListener('load', () => {
+    const sideNav = document.body.querySelector('#sideNav');
+    if (sideNav) {
+        new bootstrap.ScrollSpy(document.body, {
+            target: '#sideNav',
+            rootMargin: '0px 0px -40%',
+        });
+    };
 });
