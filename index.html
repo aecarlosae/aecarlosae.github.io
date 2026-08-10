@@ -686,73 +686,18 @@
                         <a href="mailto:aecarlosae@gmail.com">aecarlosae@gmail.com</a> or phone 
                         <a href="tel:+584121397565">+58 412-1397565</a>. I look forward to collaborating with you!
                     </p>
-                    <!--<form
-                        action="contact/"
-                        method="post"
-                        class="needs-validation printer-d-none"
-                        novalidate
-                        data-success-message="Your message has been sent successfully. I will get back to you soon."
-                        data-error-message="There was an error sending your message. Please try again later."
-                        data-error-recaptcha-message="reCaptcha verification failed. Please try again.">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required autocomplete="on">
-                            <div class="invalid-feedback">Please enter your name.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required autocomplete="on">
-                            <div class="invalid-feedback">Please enter a valid email address.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                            <div class="invalid-feedback">Please enter your message.</div>
-                        </div>
-                        <div id="g-recaptcha"></div>
-                        <button type="submit" class="btn btn-primary text-white my-3 fw-bold">Send Message</button>
-                    </form>-->
                 </div>
             </section>
             <hr class="m-0 printer-d-none" />
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous" async></script>
-        <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
-        <!-- <script>
-            // How this code snippet works:
-            // This logic overwrites the default behavior of `grecaptcha.ready()` to
-            // ensure that it can be safely called at any time. When `grecaptcha.ready()`
-            // is called before reCAPTCHA is loaded, the callback function that is passed
-            // by `grecaptcha.ready()` is enqueued for execution after reCAPTCHA is
-            // loaded.
-            if(typeof grecaptcha === 'undefined') {
-                grecaptcha = {
-                ready: function(cb) {
-                    // window.__grecaptcha_cfg is a global variable that stores reCAPTCHA's
-                    // configuration. By default, any functions listed in its 'fns' property
-                    // are automatically executed when reCAPTCHA loads.
-                    const c = '___grecaptcha_cfg';
-                    window[c] = window[c] || {};
-                    (window[c]['fns'] = window[c]['fns'] || []).push(cb);
-                }
-                };
-            }
-
-            grecaptcha.ready(function(){
-                grecaptcha.render("g-recaptcha", {
-                    sitekey: "6LfE6BorAAAAAO8EKNzBH6t78MjdoOjFi3Sk6bkP"
-                });
-            });
-        </script> -->
         <script src="assets/js/scripts.js" defer></script>
 
         <script type="text/javascript">
-            // Escuchador en JavaScript Nativo (Evita el error "$ is not defined")
             document.addEventListener("DOMContentLoaded", function() {
                 var visualSelects = document.querySelectorAll('.language-selector');
                 visualSelects.forEach(function(visualSelect) {
                     if (visualSelect) {
-                        // 1. Sincronizar el selector con el idioma actual de la cookie antes de que el usuario interactúe
                         ca2eSyncSelectorWithCookie(visualSelect);
                         
                         visualSelect.addEventListener('change', function() {
@@ -785,23 +730,19 @@
                 setTimeout(function() { clearInterval(checkExist); }, 3000);
             }
             
-            // Nueva función para leer la cookie de Google y marcar el "selected" correcto
             function ca2eSyncSelectorWithCookie(visualSelect) {
-                // Busca la cookie 'googtrans' que Google Translate crea automáticamente
                 var matches = document.cookie.match(new RegExp('(?:^|; )googtrans=([^;]*)'));
                 if (matches) {
-                    var cookieValue = decodeURIComponent(matches[1]); // Ej: "/en/es"
+                    var cookieValue = decodeURIComponent(matches[1]);
                     var langParts = cookieValue.split('/');
                     if (langParts.length >= 3) {
-                        var currentLang = langParts[2]; // Esto nos dará 'es', 'fr', etc.
+                        var currentLang = langParts[2];
                         
-                        // Cambiamos el valor del selector visual para que coincida
                         if (visualSelect.querySelector('option[value="' + currentLang + '"]')) {
                             visualSelect.value = currentLang;
                         }
                     }
                 } else {
-                    // Si no hay cookie, por defecto dejamos el idioma base (en)
                     visualSelect.value = 'en';
                 }
             }
@@ -812,42 +753,6 @@
                     icon.classList.add('notranslate');
                     icon.setAttribute('translate', 'no');
                 });
-                
-                var pages = document.querySelectorAll('.page-cms-84 .elementor-heading-title, .page-cms-84 p a');
-                pages.forEach(function(page) {
-                    page.classList.add('notranslate');
-                    page.setAttribute('translate', 'no');
-                });
-                
-                var submenus = document.querySelectorAll('#cbp-hrmenu-tab-33 .iqitmegamenu-submenu-container ul li a, #cbp-hrmenu-tab-11 .iqitmegamenu-submenu-container ul li a');
-                submenus.forEach(function(submenu) {
-                    submenu.classList.add('notranslate');
-                    submenu.setAttribute('translate', 'no');
-                });
-                
-
-                const contactInfoAddress = document.querySelector('#contact-infos .contact__infos');
-                if (contactInfoAddress) {
-                    contactInfoAddress.classList.add('notranslate');
-                    contactInfoAddress.setAttribute('translate', 'no');
-                }
-                
-                // --- NUEVA PROTECCIÓN PARA EL ENLACE DE TOTAL LOOKS ---
-                // Buscamos el enlace específico por su atributo href
-                var totalLooksLink = document.querySelector('a[href*="/total-looks"]');
-                if (totalLooksLink) {
-                    // Protegemos el enlace completo
-                    totalLooksLink.classList.add('notranslate');
-                    totalLooksLink.setAttribute('translate', 'no');
-                    
-                    // Protegemos también el span interno por seguridad
-                    var totalLooksSpan = totalLooksLink.querySelector('.cbp-tab-title');
-                    if (totalLooksSpan) {
-                        totalLooksSpan.classList.add('notranslate');
-                        totalLooksSpan.setAttribute('translate', 'no');
-                    }
-                }
-                // ------------------------------------------------------
             }    
             
             (function() {
@@ -860,12 +765,9 @@
         </script>
 
         <script type="text/javascript">
-            // 1. Create the link element
             const canonicalLink = document.createElement('link');
-            // 2. Set the appropriate attributes
             canonicalLink.setAttribute('rel', 'canonical');
             canonicalLink.href = window.location.protocol + '//' + window.location.host + window.location.pathname;
-            // 3. Append it to the document head
             document.head.appendChild(canonicalLink);
         </script>
     </body>
